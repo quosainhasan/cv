@@ -1,4 +1,13 @@
-console.log('Its working')
+fetch("https://log.quosain.tech/api/data?apiKey=f74f8a7aef8d56a535792ca135a765c5")
+  .then(res => res.json())
+  .then(() => {
+    // Do nothing with the result
+  })
+  .catch(() => {
+    // Silently ignore errors
+  });
+
+
 
 let theme = localStorage.getItem('theme')
 
